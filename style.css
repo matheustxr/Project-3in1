@@ -1,0 +1,302 @@
+body{
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    padding-left: 85px;
+    font-family: 'Poppins', sans-serif;
+    overflow: hidden;
+    color:#4D4C59;
+    background-color: #ffffff;
+    transition: 0.2s linear;
+}
+
+
+
+
+
+#imgTop{
+    width: calc(100% - 85px);
+    position: absolute;
+    top: 0;
+}
+
+#imgBottom{
+    width: calc(100% - 85px);
+    position: absolute;
+    bottom: 0;
+}
+
+.sideBar{
+    position: absolute;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    width: 85px;
+    height: 100%;
+    background-color: #6C63FF;
+    color: #fff;
+}
+
+.sideBar ul{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    gap: 34px;
+    padding-left: 25px;
+}
+
+.sideBar ul li{
+    list-style-type: none;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.sideBar ul li p{
+    width: 100%;
+    margin: 0;
+}
+
+.sideBar ul li a{
+    width: 100%;
+    margin: 0;
+    text-decoration: none;
+    color: #fff;
+}
+
+.sideBar ul li a:hover{
+    cursor: pointer;
+}
+
+
+#menu{
+    width: 30px;
+    height: 30px;
+    background-color: transparent;
+    border: none;
+    margin: 0;
+    padding: 0;
+}
+
+#sair{
+    bottom: 0;
+    position: fixed;
+    width: 78px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: gray;
+    border:none;
+}
+
+.sideBar button:hover{
+    cursor: pointer;
+}
+
+
+.sideBar img{
+    width: 30px;
+    height: 30px;
+}
+
+.content{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding-top: 200px;
+}
+
+.content img{
+    width: auto;
+    height: auto;
+}
+
+.content h1{
+    color: #6C63FF;
+    line-height: 54px;
+    font-size: 43px;
+}
+
+.content p{
+    display: flex;
+    justify-content: center;
+    margin: 46px auto 31px auto;
+}
+
+.content button{
+    width: 160px;
+    height: 46px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #6C63FF;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    margin: auto;
+    font-size: 16px;
+    box-shadow: 3px 3px 3px rgba(31, 31, 41, 0.795);
+}
+
+.content button:hover{
+    cursor: pointer;
+}
+
+.content button:active{
+    transform: translateY(3px);
+}
+
+
+.timer{
+    display: flex;
+    gap: 10px;
+    
+}
+
+.timer h1 {
+    color: #4D4C59;
+    font-size: 72px;
+    margin: 15px 0 0 0 ;
+    align-self:flex-end;
+}
+
+.timer:hover{
+    text-shadow: 0 0 10px rgb(108, 99, 255);
+}
+
+.timer p{
+    align-self: center;
+    margin: 0;
+}
+
+.unity {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+/*     MODAL    */
+
+.contentSubscribe{
+    background-color: #87878d;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    padding-top: 10%;
+    flex-direction: column;
+    gap: 20px;
+    transition: transform .3s;
+}
+
+
+.hide{
+    opacity: 0;
+    visibility: hidden;
+    transition: 0,9s all;
+}
+
+.contentSubscribe input{
+    width: 350px;
+    height: 20px;
+    border: none;
+    border-radius: 3px;
+}
+
+.buttons{
+    display: flex;
+    gap: 15px;
+}
+
+.buttons button{
+    width: 150px;
+    height: 30px;
+    background-color: #6C63FF;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    font-size: 16px;
+    box-shadow: 3px 3px 3px rgba(31, 31, 41, 0.795);
+}
+
+.buttons button:hover{
+    cursor: pointer;
+}
+
+.buttons button:active{
+    transform: translateY(3px);
+}
+
+
+
+     /* DARK MODE   */
+
+.darkMode{
+    background-color: #4D4C59;
+    color: #ffffff;
+}
+
+
+.darkModeh1 h1{
+    color: #ffffff;
+}
+
+.sideBarDark{
+    color: #ffffff;
+}
+
+.btnDarkMode{
+    width: auto;
+    display: flex;
+    align-self: center;
+    margin: 10px;
+}
+
+.checkBox{
+    opacity: 0;
+    position: absolute;
+}
+
+.label{
+    
+    background-color: gray;
+    border-radius: 50px;
+    cursor: pointer;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 5px;
+    position: relative;
+    height: 25px;
+    width: 55px;
+
+    transform: scale(1);
+}
+
+.label .ball{
+    background-color: #FFF;
+    border-radius: 50%;
+    position: absolute;
+    
+    height: 22px;
+    width: 22px;
+
+    transform: translateX(0px);
+    transition: transform 0.2s linear;
+}
+
+.checkBox:checked + .label .ball{
+    transform: translateX(31px);
+}
